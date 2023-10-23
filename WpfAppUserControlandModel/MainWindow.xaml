@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfAppUserControlandModel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppUserControlandModel"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--<Views:UserControl></Views:UserControl> IDK why its not working-->
+        <StackPanel>
+            <StackPanel x:Name="spDisplay" Orientation="Horizontal">
+                <Label x:Name="lblSongName" Margin="10,5,5,5">Name:</Label>
+                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center">HERE</TextBox>
+                <Label x:Name="lblSongTime" Margin="10,5,5,5">Time:</Label>
+                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center">HERE</TextBox>
+            </StackPanel>
+            <StackPanel x:Name="spButtons" Orientation="Horizontal">
+                <Button Margin="10,5" Command="{Binding PlayCommand}">PLAY</Button>
+                <Button Margin="10,5" Command="{Binding StopCommand}">STOP</Button>
+                <Button Margin="10,5" Command="{Binding NextCommand}">NEXT</Button>
+                <Button Margin="10,5" Command="{Binding BackCommand}">BACK</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="WpfAppUserControlandModel.Views.UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfAppUserControlandModel.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel x:Name="spDisplay" Orientation="Horizontal">
+                <Label x:Name="lblSongName" Margin="10,5,5,5">Name: </Label>
+                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center">HERE</TextBox>
+                <Label x:Name="lblSongTime" Margin="10,5,5,5">Time: </Label>
+                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center">HERE</TextBox>
+            </StackPanel>
+            <StackPanel x:Name="spButtons" Orientation="Horizontal">
+                <Button Margin="10,5">PLAY</Button>
+                <Button Margin="10,5">STOP</Button>
+                <Button Margin="10,5">NEXT</Button>
+                <Button Margin="10,5">LAST</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
